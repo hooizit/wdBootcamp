@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Annoy-omatic</title>
+</head>
+<body>
+  <script>
+    // var answer = prompt("Мы уже приехали?");
+    // while(answer !== "yes" && answer !== "yeah") {
+    //   var answer = prompt("А теперь приехали?");
+    // }
+    // alert("Ураа! Мы приехали!");
+
+    // v2
+    var answer = prompt("Мы уже приехали?");
+    while(answer.indexOf("yes") === -1) {
+      var answer = prompt("А теперь приехали?");
+    }
+    alert("Ураа! Мы приехали!");
+  </script>
+</body>
+</html>
