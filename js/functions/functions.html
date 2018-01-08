@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Functions</title>
+</head>
+
+<body>
+  <script>
+    function isEven(even) {
+      return even % 2 === 0;
+    }
+
+    function factorial(num) {
+      var tmp = num;
+      while (num-- > 2) {
+        tmp *= num;
+      }
+      return tmp;
+    }
+
+    function kebabToSnake(str) {
+      return str = str.replace(/-/g, "_");
+    }
+
+    // ---------------SCOPE-ПРИСВОЕНИЕ---------------------
+    
+    var y = 99;
+
+    function someFunc() {
+      var y = 3;
+      return y;
+    }
+
+    // console.log y; //99
+
+    function song() {
+      console.log("Beat it...");
+      console.log("Just beat it...");
+    }
+
+    // console:
+    // setInterval (song, 1000)
+    // clearInterval(1)
+
+    //setInterval(function(){
+    // console.log("I am an anounymous function!");
+    // console.log("Cool!");
+    //}, 2000);
+  </script>
+</body>
+
+</html>
