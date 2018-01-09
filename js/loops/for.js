@@ -40,3 +40,10 @@ var colors = ["red", "orange", "yelow", "green"];
 for(var i = 0; i < colors.length; i++) {
   console.log(colors[i]);
 }
+
+// for.Each
+
+colors.forEach(function(color) {
+  //color is a placeholder, call it whatever you want
+  console.log(color);
+});
