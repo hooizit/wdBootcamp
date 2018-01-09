@@ -24,6 +24,9 @@ friends.indexOf("Lee"); //-1
 var slicedFriends = friends.slice(2,4); // slicedFriends = [David", "Mattias"], friends = ["Charlie", "Liz", "David", "Mattias", "Liz"] 
 var otherSlicedFriends = slicedFriends.slice(); // both = [David", "Mattias"]
 
+// --- splice - remove specific index
+nums.splice(index,1);
+
 // --- some practic --
 var nums = [22, 65, 57, 85, 38];
 console.log(nums[nums.length]); // undefined
