@@ -36,3 +36,39 @@ var friendGroups = [
 ];
 
 console.log(friendGroups[2][0]);
+
+// for with arrays
+
+var colors = ["red", "orange", "yelow", "green"];
+
+for(var i = 0; i < colors.length; i++) {
+  console.log(colors[i]);
+}
+
+// for.Each
+
+colors.forEach(function(color) {
+  //color is a placeholder, call it whatever you want
+  console.log(color);
+});
+function printColor(color) {
+  console.log("***********");
+  console.log(color);
+  console.log("***********");
+}
+
+// console:
+colors.forEach(printColor); 
+// [Log] ***********
+// [Log] red
+// [Log] ***********
+
+// Excercise
+var numbers = [1,2,3,4,5,6,7,8,9,10];
+var colors = ["red", "orange", "yelow", "green"];
+
+numbers.forEach(function(color) { // переменная colors тут не связана
+  if(color % 3 === 0) {
+    console.log(color);
+  }
+});
