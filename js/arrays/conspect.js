@@ -75,3 +75,68 @@ numbers.forEach(function(color) { // переменная colors тут не с�
     console.log(color);
   }
 });
+
+// - Array problem set
+
+// -- 1. printRevers()
+// --- Write a function printReverse() that takes an array as an argument
+// --- and prints out the elements in the array in reverse order(don't acrually reverse the array itself)
+
+function printReverse(rev) {
+  console.log(rev.reverse());
+}
+
+// --- or
+
+function printReverse(rev) {
+  for(var i = rev.length -1; i >= 0; i--){
+    console.log(rev[i]);
+  }
+}
+
+// -- 2. isUniform()
+// --- Write a function isUniform() which takes an array as an argument
+// --- and returns true if all elements in the array are identical
+
+function isUniform(uniform) {
+  var f = uniform[0];
+  for(var i = 1; i < uniform.length; i++) {
+    if(uniform[i] !== f) {
+      return false;
+    }
+  }
+  return true;
+}
+
+// -- 3. sumArray()
+// --- Write a function sumArray() that accepts an array of numbers and
+// -- returns the sum of all numbers in the array
+
+function sumArray(sum) {
+  console.log(sum.reduce(function(a, b) {
+    return a + b;
+  }));
+}
+// --- or
+
+function sumArray(sum) {
+  var total = 0;
+  sum.forEach(function(element){
+    total += element;
+  });
+    return total;
+}
+
+// -- 4. max()
+// --- Write a function sumArray() that accepts an array of numbers and
+// --- returns the maximum number in the array
+
+function max(arr) {
+  var max = arr[0];
+  for(var i = 1; i < arr.length; i++) {
+    if(arr[i] > max){
+      max = arr[i];
+    }
+  }
+  return max;
+}
