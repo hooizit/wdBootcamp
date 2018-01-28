@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery Methods</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <h1>jQuery Events Demo</h1>
+  <h1>jQuery Events Demo</h1>
+  <h1>jQuery Events Demo</h1>
+
+    <input type="text">
+
+  <button>Don't click me</button>
+  <button>Seriously, Don't click me</button>
+  <button id="last">This is your last warning!</button>
+
+
+<script>
+    // $("h1").click(function(){
+    //     alert("h1 clicked!");
+    // });
+
+    $("button").click(function(){
+        $(this).css("background", "pink");
+        var text = $(this).text();
+        alert("You clicked " + text);
+    });
+
+    $("input").keypress(function(event){
+        // console.log("You pressed a key");
+        // console.log(event);
+        if(event.which === 13) {
+            alert("You hit Enter")
+        }
+    });
+
+    $("h1").on("click", function(){
+        $(this).css("color", "purple");
+    });
+
+    $("button").on("mouseenter", function(){
+        $(this).css("font-weight", "bold");
+    });
+    
+    $("button").on("mouseleave", function(){
+        $(this).css("font-weight", "normal");
+    });
+</script>
+
+</body>
+
+</html>
