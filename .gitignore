@@ -101,3 +101,5 @@ Thumbs.db
 .idea
 
 .vscode
+
+.cache
